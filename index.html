@@ -697,6 +697,65 @@
     background: rgba(217,119,87,0.04);
   }
 
+  /* ─── FEATURED ARTICLE ─── */
+  .featured-article {
+    display: block;
+    border-radius: 24px;
+    padding: 40px 32px;
+    margin-bottom: 48px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(106,155,204,0.06), rgba(106,155,204,0.14));
+    border: 1px solid rgba(106,155,204,0.2);
+  }
+
+  .featured-article:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(106,155,204,0.12);
+  }
+
+  .featured-article .featured-badge {
+    color: var(--accent-secondary);
+  }
+
+  .featured-article h3 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+
+  .featured-article > p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  .featured-article .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .featured-article .featured-cta {
+    color: var(--accent-secondary);
+  }
+
+  .featured-article:hover .featured-cta { gap: 10px; }
+
+  [data-theme="dark"] .featured-article {
+    background: linear-gradient(135deg, rgba(122,174,216,0.06), rgba(122,174,216,0.14));
+    border-color: rgba(122,174,216,0.2);
+  }
+
+  [data-theme="dark"] .featured-article:hover {
+    box-shadow: 0 12px 40px rgba(122,174,216,0.1);
+  }
+
   /* ─── AI & INNOVATION ─── */
   .innovation-grid {
     display: grid;
@@ -1320,6 +1379,19 @@
     <h2 class="section-title reveal reveal-d1">Pioneering<br>AI-driven dev.</h2>
     <p class="section-subtitle reveal reveal-d2">At the intersection of executive leadership and hands-on engineering.</p>
   </div>
+  <a href="https://medium.com/@itay.shmool/the-ai-native-organization-a-framework-for-leaders-601dc59c9c5f" target="_blank" rel="noopener" class="featured-article reveal">
+    <span class="featured-badge">&#9998; Featured Article</span>
+    <h3>The AI-Native Organization: A Framework for Leaders</h3>
+    <p>A practical framework for transforming traditional organizations into AI-native companies. Rethinking org structure, leadership roles, and how teams operate when AI becomes a core member &mdash; not just a tool.</p>
+    <div class="project-meta">
+      <span class="project-tag">Leadership</span>
+      <span class="project-tag">AI Transformation</span>
+      <span class="project-tag">Org Design</span>
+      <span class="project-tag">Medium</span>
+    </div>
+    <span class="featured-cta">Read on Medium &rarr;</span>
+  </a>
+
   <div class="innovation-grid">
     <div class="innovation-item reveal">
       <h3>AI Agent Swarms</h3>
